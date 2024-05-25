@@ -1,79 +1,13 @@
+html, body {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+
 #root {
 	position: relative;
-	height: 100vh;
+	height: 100%;
 	width: 100%;
+	background-color: rgb(34, 34, 34);
 }
 
-.encabezado {
-	background-color: black;
-	border-top: 4px solid rgb(147, 67, 253);
-	padding: 10px;
-}
-
-.encabezado li {
-	display: flex;
-    list-style: none;
-    margin: 0 20px;
-    align-items: center;
-}
-
-.encabezado li a {
-	text-decoration: none;
-	color: white;
-	font-size: 1.1rem;
-	font-weight: 700;
-}
-
-.encabezado li a:hover {
-	color: rgb(147, 67, 253);
-}
-
-.logo {
-	margin-left: 20px;
-	color: white;
-	font-size: 1.5rem;
-}
-
-.logo span {
-	color: rgb(147, 67, 253);
-}
-
-.logo:hover {
-	color: white;
-}
-
-.carrito {
-	position: relative;
-	text-decoration: none;
-	margin-left: 16px;
-}
-
-.carrito span {
-	position: absolute;
-	top: -4px;
-	right: 11px;
-	background-color: red;
-	color: white;
-	border-radius: 100%;
-	padding: 1px 5px;
-	font-size: 0.7rem;
-	font-weight: 500;
-}
-
-.carrito svg {
-	width: 24px;
-	height: 24px;
-	color: white;
-	margin-left: 25px;
-	margin-right: 20px;
-	margin-top: 6px;
-	margin-bottom: 4px;
-}
-
-.itemList {
-	color: black;
-	font-size: 1.4rem;
-	font-weight: 700;
-	text-align: center;
-	margin-top: 25px;
-}

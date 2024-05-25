@@ -1,0 +1,55 @@
+.detailItemDescription{
+    background-color: black;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 40px;
+    border-radius: 15px;
+}
+
+.detailItemDescription h3 {
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 10px;
+}
+
+.detailItemDescription h4 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 200;
+    margin-bottom: 20px;
+}
+
+.detailItemDescription h5 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.detailItemDescription p {
+    color:white;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.detailItemDescription button {
+    background-color: rgb(147, 67, 253);
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 6px;
+    border: none;
+}
+
+.detailItemDescription button:hover {
+    background-color: rgb(97, 22, 196);
+    border: none;
+}
+
+.detailImageProduct{
+    display: flex;
+    max-height: 500px;
+}

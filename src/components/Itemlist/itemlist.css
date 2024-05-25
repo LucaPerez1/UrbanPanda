@@ -1,0 +1,9 @@
+.itemContainer{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    border: none;
+    border-radius: 15px; 
+}

@@ -1,0 +1,27 @@
+.carrito {
+	position: relative;
+	text-decoration: none;
+	margin-left: 16px;
+}
+
+.carrito span {
+	position: absolute;
+	top: -4px;
+	right: 11px;
+	background-color: red;
+	color: white;
+	border-radius: 100%;
+	padding: 1px 5px;
+	font-size: 0.7rem;
+	font-weight: 500;
+}
+
+.carrito svg {
+	width: 24px;
+	height: 24px;
+	color: white;
+	margin-left: 25px;
+	margin-right: 20px;
+	margin-top: 6px;
+	margin-bottom: 4px;
+}
