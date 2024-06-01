@@ -19,9 +19,6 @@ const ItemDetailContainer = () => {
 
     }, [itemid]);
 
-    console.log(itemid);
-    console.log(product);
-
     return (
         <div className="itemDetailContainer">
             <ItemDetail product={product}/>

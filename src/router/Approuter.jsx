@@ -10,8 +10,8 @@ function AppRouter () {
             <NavBar />
             <Routes>
                 <Route path="/" element= {<ItemListContainer />} />
-                <Route path="/category/:categoryid" element= {<ItemListContainer />} />
                 <Route path="/item/:itemid" element= {<ItemDetailContainer />} />
+                <Route path="/category/:categoryid" element= {<ItemListContainer />} />
             </Routes>
         </BrowserRouter>
     )
