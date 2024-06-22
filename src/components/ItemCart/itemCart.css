@@ -1,0 +1,53 @@
+.itemCart{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    background-color: black;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+.imagenContainer{
+    flex: 2;
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.itemCart img {
+    max-height: 110px;
+    max-width: 100%;
+}
+.itemCartDetail{
+    flex: 9;
+    padding-left: 20px;
+}
+
+.itemCartDetail h3 {
+    color: white;
+    font-size: 1.3rem;
+}
+
+.itemCartDetail p {
+    color: white;
+    margin-bottom: 4px;
+    font-size: 0.9rem;
+}
+
+.deleteButton {
+    flex: 1;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: solid 1px white;
+    cursor: pointer;
+}
+
+.deleteButton svg {
+    color: white;
+    height: 20px;
+    width: 20px;
+}

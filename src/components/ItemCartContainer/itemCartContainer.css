@@ -1,0 +1,14 @@
+.total {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: black;
+}
+
+.total p {
+    color: white;
+}
+
+.total h3 {
+    color: white;
+}
