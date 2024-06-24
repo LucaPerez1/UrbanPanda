@@ -1,0 +1,19 @@
+.loadingBar{
+    color: rgb(147, 67, 253);
+    width: 70px;
+    height: 70px;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.loadingContainer{
+    background-color:#141414ef;
+    width: 100vw;
+    height: 100vh;
+    position: fixed; 
+    z-index: 2000;
+    top: 0;
+    left: 0;
+}

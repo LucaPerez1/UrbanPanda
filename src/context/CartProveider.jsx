@@ -33,8 +33,15 @@ const CartProvaider = ({children}) => {
         setCart([])
     }
 
+    function priceARS(precio) {
+        return precio.toLocaleString('es-AR', {
+            style: 'currency',
+            currency: 'ARS'
+        });
+    }
+
     return (
-        <CartContext.Provider value={{cart, totalPriceCart, addItemCart, deleteItemCart, clearCart, totalCart}}>
+        <CartContext.Provider value={{cart, totalPriceCart, addItemCart, deleteItemCart, clearCart, totalCart, priceARS}}>
             {children}
         </CartContext.Provider>
     )

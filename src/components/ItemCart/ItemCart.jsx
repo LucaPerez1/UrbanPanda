@@ -3,7 +3,7 @@ import './itemCart.css'
 import CartContext from '../../context/CartContex'
 
 const ItemCart = ({ item }) => {
-    const {deleteItemCart} = useContext(CartContext)
+    const {deleteItemCart, priceARS} = useContext(CartContext)
     return (
         <div className="itemCart">
             <div className='imagenContainer '>
@@ -11,9 +11,8 @@ const ItemCart = ({ item }) => {
             </div>
             <div className='itemCartDetail '>
                 <h3>{item.name}</h3>
-                <p>Precio por unidad: {item.price}</p>
+                <p>Precio por unidad: {priceARS(item.price)}</p>
                 <p>Cantidad: {item.cuantify}</p>
-                <p>Subtotal:</p>
             </div>
             <div onClick={()=>deleteItemCart(item.id)} className='deleteButton'>
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">

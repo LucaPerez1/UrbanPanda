@@ -1,0 +1,127 @@
+footer {
+    width: 100%;
+    background-color:  rgb(20, 20, 20);
+	margin-top: auto;
+}
+
+.footerGrupo1{
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding-top: 20px;
+}
+
+.caja figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoFooter {
+	width: 200px;
+	padding-right: 30px;
+}
+
+.caja h3 {
+    color: white;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    padding-left: 30px;
+    padding-top: 10px;
+}
+
+.caja a {
+    color: white;
+    margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.caja a:hover {
+    text-decoration: underline 2px;
+    color: white;
+} 
+
+.caja li {
+    list-style: none;
+}
+
+.caja ul {
+    padding-left: 30px;
+    margin: 0px;
+}
+
+.redSocial {
+	
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.redSocial a {
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    margin-right: 18px;
+    
+}
+
+.redSocial svg {
+    width: 32px;
+    height: 32px;
+    transition: 0.5s;
+}
+
+.redSocial svg:hover {
+    width: 44px;
+    height: 44px;
+}
+
+.footerGrupo2 {
+    background-color: rgb(20, 20, 20);
+    color: rgb(145, 145, 145);
+    padding: 10px 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+@media (max-width:992px) {
+
+    .footerGrupo1 {
+        width: 70%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 20px 0px;
+    }
+
+    .caja ul {
+        padding: 0px;
+    }
+
+    .caja  h3 {
+    text-align: center;
+    padding: 0px;
+    }
+
+    .caja li {
+    text-align: center;
+    }
+
+    .redSocial {
+        justify-content: center;
+    }
+
+    .logoFooter {
+        width: 250px;
+    }
+}

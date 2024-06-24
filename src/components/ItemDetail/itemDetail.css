@@ -9,21 +9,21 @@
 
 .detailItemDescription h3 {
     color: white;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 900;
     margin-bottom: 10px;
 }
 
 .detailItemDescription h4 {
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 200;
     margin-bottom: 20px;
 }
 
 .detailItemDescription h5 {
     color: white;
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     font-weight: 500;
     margin-bottom: 20px;
 }
@@ -38,10 +38,11 @@
 .detailItemDescription button {
     background-color: rgb(147, 67, 253);
     color: black;
-    font-size: 1.3rem;
-    font-weight: 500;
-    padding: 6px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: 4px;
     border: none;
+    border-radius: 8px;
 }
 
 .detailItemDescription button:hover {
@@ -52,4 +53,10 @@
 .detailImageProduct{
     display: flex;
     max-height: 500px;
+    width: 100%;
+}
+
+.detailImageProduct img {
+    border-radius: 20px;
+    width: 100%;
 }

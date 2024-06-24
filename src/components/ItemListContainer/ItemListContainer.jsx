@@ -2,30 +2,40 @@ import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import ItemList from "../Itemlist/Itemlist";
 import './itemListContainer.css'
+import {getDocs, getFirestore, collection, query, where, Firestore } from "firebase/firestore";
+import LoadingBar from "../LoadingBar/LoadingBar";
 
 const ItemListContainer = () => {
     const [productos, setProductos] = useState ([]);
     const [title, setTitle] = useState()
-    const { categoryid } = useParams();
+    const { categoryid } = useParams(); 
+    const [loading, setLoading] = useState(true)
     
     useEffect(() => {
+
         const fetchData = async () => {
-            const response = await fetch('../data/productos.json');
-            const data = await response.json();
-                
+            setLoading(true)
+            const db = getFirestore();
+            const docsRef = collection(db, "products");
+
             if (categoryid) {
-                setProductos(data.filter(producto => producto.categoria === categoryid));
+                const querySnapshop = await getDocs(query(docsRef, where("categoria", "==", categoryid)));
+                setProductos(querySnapshop.docs.map(doc => ({id:doc.id,...doc.data()})))
                 setTitle(categoryid)
             } else {
-                setProductos(data);
+                const querySnapshop = await getDocs(docsRef);
+                setProductos(querySnapshop.docs.map(doc => ({id:doc.id,...doc.data()})))
                 setTitle("Nuestros Productos")
             }
-                
-        };
-        
+
+            setLoading(false)
+        }
         fetchData();
         
+
     }, [categoryid]);
+
+    if (loading) return <LoadingBar/>
 
     return (
         <>

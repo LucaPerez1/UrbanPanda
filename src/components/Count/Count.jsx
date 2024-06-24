@@ -1,3 +1,5 @@
+import './count.css';
+
 const Count = ({count, handleCount, stock}) =>{
 
     const increment = () => {
@@ -9,7 +11,7 @@ const Count = ({count, handleCount, stock}) =>{
     }
 
     return (
-        <div>
+        <div className='counter'>
             <button onClick={decrement}>-</button>
             <p>{count}</p>
             <button onClick={increment}>+</button>

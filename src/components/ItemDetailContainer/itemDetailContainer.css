@@ -1,6 +1,6 @@
 .itemDetailContainer{
     display: flex;
     flex-direction: row;
-    align-items: center;
-    justify-content: center;
+    align-items: start;
+    justify-content: space-around;
 }
